@@ -47,6 +47,28 @@ def calculator():
             divide = Division()
             divide.division_operation(number_1, number_2)
 
+        # if user entered an invalid operation,
+        else:
+            # print an error message
+            print("\033[91mInvalid input \033[0m")
 
+        # ask user if they want to solve again
+        new_computation = str(input("\033[38;5;156m\nWould you like to solve again? (YES/NO): \033[0m"))
+
+        # if the user answered yes,
+        if new_computation.upper() == "YES":
+            # call the calculator function to repeat the process
+            calculator()
+
+        # if the user answered no,
+        elif new_computation.upper() == "NO":
+            # print thank you and exit the program
+            print("\n\033[34mThank you! \033[0m")
+            break
+
+        # if user entered an invalid response, print an error message
+        else:
+            print("Invalid response. Kindly run it again.")
+            break
 
 
