@@ -1,5 +1,5 @@
 class Addition:
-    def addition_operation(self, num_1, num_2):
+    def addition_operation(self, number_1, number_2):
         # try
         try:
         # convert both inputs to float if one or both of the inputs made by user is a float
