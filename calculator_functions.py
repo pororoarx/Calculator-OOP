@@ -48,6 +48,7 @@ def calculator():
 
                 divide = Division()
                 divide.division_operation(number_1, number_2)
+                break
         
         # if user entered an invalid operation,
         else:
@@ -72,6 +73,8 @@ def calculator():
         else:
             print("Invalid response. Kindly run it again.")
             break
+    
+
         
         
 
