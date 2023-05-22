@@ -9,12 +9,8 @@ from display_operations import OperationsDisplay
 def calculator():
     # perform a while loop until the user decided to exit the loop
     while True:
-        # ask user to enter an operation
-        # print the operations that users can pick from
-        print("\033[38;5;125m1. Addition\n\033[38;5;205m2. Subtraction\n\033[38;5;218m3. Multiplication\n\033[38;5;225m4. Division")
-        # reset to default color
-        print("\033[0m")
-        chosen_operation = input("\n\033[38;5;156mChoose one of the four operations: \033[0m")  
+        OperationsDisplay.operations()
+        chosen_operation = input("\n\033[38;5;156mChoose one of the four operations: \033[0m")
 
         # if user chooses addition
         if chosen_operation == "1":
