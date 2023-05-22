@@ -71,6 +71,8 @@ def calculator():
             print("Invalid response. Kindly run it again.")
             break
         
-calculator()
+    return None
+        
+
 
 
