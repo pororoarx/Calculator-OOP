@@ -1,10 +1,6 @@
 class Division:
     def division_operation(self, number_1, number_2):
         while True:
-            # ask the user to enter two numbers
-            number_1 = input("\033[38;5;214mEnter your first number: \033[0m")
-            number_2 = input("\033[38;5;214mEnter your second number: \033[0m")
-
             # try
             try:
                 # convert both inputs to float if one or both of the inputs made by user is a float
@@ -31,7 +27,7 @@ class Division:
             except ValueError:
                 print("\033[91mInvalid input \033[0m\n")
 
-            # perform a while loop to ask the user if they want to divide again
+        # perform a while loop to ask the user if they want to divide again
             while True:
                 another_input = input("\033[38;5;149mWould you like to try dividing again? (YES/NO): \033[0m")
                 # if yes, break out of the inner loop and repeat the division operation
