@@ -35,7 +35,18 @@ def calculator():
             number_1 = input("\033[38;5;214mEnter your first number: \033[0m")
             number_2 = input("\033[38;5;214mEnter your second number: \033[0m")
 
-            product = Multiplication()
-            product.multiplication_operation(number_1, number_2)
+            multiply = Multiplication()
+            multiply.multiplication_operation(number_1, number_2)
+
+        # if user chooses division
+        elif chosen_operation == "4":
+            # ask the user to enter two numbers
+            number_1 = input("\033[38;5;214mEnter your first number: \033[0m")
+            number_2 = input("\033[38;5;214mEnter your second number: \033[0m")
+
+            divide = Division()
+            divide.division_operation(number_1, number_2)
+
+
 
 
