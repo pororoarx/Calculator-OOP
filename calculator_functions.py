@@ -70,5 +70,7 @@ def calculator():
         else:
             print("Invalid response. Kindly run it again.")
             break
+        
+calculator()
 
 
