@@ -27,7 +27,7 @@ class Division:
             except ValueError:
                 print("\033[91mInvalid input \033[0m\n")
 
-        # perform a while loop to ask the user if they want to divide again
+            # perform a while loop to ask the user if they want to divide again
             while True:
                 another_input = input("\033[38;5;149mWould you like to try dividing again? (YES/NO): \033[0m")
                 # if yes, break out of the inner loop and repeat the division operation
@@ -40,4 +40,26 @@ class Division:
                     
                 # if user entered an invalid response, ask the user to enter either 'YES' or 'NO'
                 else:
-                    print("\033[91mInvalid reply. Please enter 'YES' or 'NO'\033[91m")    
+                    print("\033[91mInvalid reply. Please enter 'YES' or 'NO'\033[91m")  
+
+            # print an error message
+            print("\033[91mInvalid input \033[0m")
+
+            # ask user if they want to solve again
+            new_computation = str(input("\033[38;5;156m\nWould you like to solve again? (YES/NO): \033[0m"))
+
+            # if the user answered yes,
+            if new_computation.upper() == "YES":
+                # call the calculator function to repeat the process
+                calculator()
+
+            # if the user answered no,
+            elif new_computation.upper() == "NO":
+                # print thank you and exit the program
+                print("\n\033[34mThank you! \033[0m")
+                break
+
+            # if user entered an invalid response, print an error message
+            else:
+                print("Invalid response. Kindly run it again.")
+                break

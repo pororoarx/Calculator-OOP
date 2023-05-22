@@ -69,7 +69,6 @@ def calculator():
         elif new_computation.upper() == "NO":
             # print thank you and exit the program
             print("\n\033[34mThank you! \033[0m")
-            break
 
         # if user entered an invalid response, print an error message
         else:
