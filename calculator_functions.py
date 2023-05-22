@@ -3,6 +3,7 @@ from addition import Addition
 from subtraction import Subtraction
 from multiplication import Multiplication
 from division import Division
+from display_operations import OperationsDisplay
 
 # define a function called calculator
 def calculator():
