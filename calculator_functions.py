@@ -28,8 +28,9 @@ def calculator():
             number_1 = input("\033[38;5;214mEnter your first number: \033[0m")
             number_2 = input("\033[38;5;214mEnter your second number: \033[0m")
 
+            original_sub = Subtraction()
+            original_sub.subtraction_operation(number_1, number_2)
             subtract = ChildSubtract()
-            subtract.subtraction_operation(number_1, number_2)
             subtract.absolute_value(number_1, number_2)
 
         # if user chooses multiplication
