@@ -19,4 +19,4 @@ child_1 = ChildAddition()
 child_1.add
 
 child_2 = ChildSubtract()
-child_2.subtract_absolute(number_1, number_2)
+child_2.subtract_absolute()
