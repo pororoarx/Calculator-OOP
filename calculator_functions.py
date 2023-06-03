@@ -5,6 +5,7 @@ from multiplication import Multiplication
 from division import Division
 from display_operations import OperationsDisplay
 from subtraction_child import ChildSubtract
+from addition_child import ChildAddition
 
 # define a function called calculator
 def calculator():
@@ -21,6 +22,8 @@ def calculator():
 
             add = Addition()
             add.addition_operation(number_1, number_2)
+            new_add = ChildAddition()
+            new_add.add(number_1, number_2)
 
         # if user chooses subtraction
         elif chosen_operation == "2":

@@ -15,5 +15,3 @@ greet = Greetings()
 greet.display()
 calculator()
 
-child_1 = ChildAddition()
-child_1.add
