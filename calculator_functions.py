@@ -7,6 +7,7 @@ from display_operations import OperationsDisplay
 from subtraction_child import ChildSubtract
 from addition_child import ChildAddition
 from multiplication_child import ChildMultiplication
+from division_child import ChildDivision
 
 # define a function called calculator
 def calculator():
