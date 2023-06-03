@@ -59,8 +59,11 @@ def calculator():
 
                 divide = Division()
                 divide.division_operation(number_1, number_2)
+                sqr_root = ChildDivision()
+                sqr_root.square_root(number_1, number_2)
+                
                 break
-        
+
         # if user entered an invalid operation,
         else:
             # print an error message
