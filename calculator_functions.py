@@ -45,6 +45,8 @@ def calculator():
 
             multiply = Multiplication()
             multiply.multiplication_operation(number_1, number_2)
+            exponent = ChildMultiplication()
+            exponent.exponent(number_1, number_2)
             
 
         # if user chooses division
