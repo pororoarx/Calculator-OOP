@@ -18,3 +18,4 @@ class Subtraction:
         # if the user entered an invalid response, catch the exception and print an error message
         except ValueError:
             print("\033[91mInvalid input \033[0m")
+
