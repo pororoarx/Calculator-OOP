@@ -5,5 +5,7 @@ class ChildSubtract(Subtraction):
         super().subtraction_operation(number_1, number_2)
 
     def absolute_value(self, number_1, number_2):
-        absolute = abs (number_1 - number_2)
+        number_1 = float(number_1)
+        number_2 = float(number_2)
+        absolute = abs(number_1 - number_2)
         print("Absolute value: ", absolute)

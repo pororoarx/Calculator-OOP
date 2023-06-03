@@ -4,6 +4,7 @@ from subtraction import Subtraction
 from multiplication import Multiplication
 from division import Division
 from display_operations import OperationsDisplay
+from subtraction_child import ChildSubtract
 
 # define a function called calculator
 def calculator():
@@ -27,8 +28,9 @@ def calculator():
             number_1 = input("\033[38;5;214mEnter your first number: \033[0m")
             number_2 = input("\033[38;5;214mEnter your second number: \033[0m")
 
-            subtract = Subtraction()
+            subtract = ChildSubtract()
             subtract.subtraction_operation(number_1, number_2)
+            subtract.absolute_value(number_1, number_2)
 
         # if user chooses multiplication
         elif chosen_operation == "3":
