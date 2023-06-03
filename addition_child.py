@@ -2,4 +2,7 @@
 from addition import Addition
 
 # create a new class
-    # add additional method
+class ChildAddition(Addition):
+    def add(self):
+        new_print = super().addition_operation()
+        print("The answer is: ", new_print)
